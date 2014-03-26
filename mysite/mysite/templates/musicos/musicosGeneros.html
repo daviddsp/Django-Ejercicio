@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Músicos y Géneros</title>
+</head>
+<body>
+<table border="2">
+<tr><th>Musicos</th><th>Generos</th></tr>
+{% for musicos in musicosGeneros %}
+	<tr style="text-align:center">
+		<td>{{ musicos.nombre }}</td>
+		<td>{{ musicos.genero }}</td>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Músicos y Géneros</title>
+</head>
+<body>
+<table border="2">
+<tr><th>Musicos</th><th>Generos</th></tr>
+{% for musigen in musicosGeneros %}
+	<tr style="text-align:center">
+		<td{% if musigen.importante %} style="font-weight: bold;"{% endif %}>{{ musigen.nombre }}
+		</td>
+		<td>{{ musigen.genero }}</td>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>
